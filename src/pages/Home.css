@@ -1,0 +1,11 @@
+li {
+    text-decoration: none;
+}
+
+label {
+    display: flex;
+}
+
+input {
+    border-radius: 10px;
+}

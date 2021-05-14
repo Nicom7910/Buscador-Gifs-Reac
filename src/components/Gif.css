@@ -1,0 +1,19 @@
+.Gif {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+    padding: 30px;
+    border: 3px solid #eaeeea;
+}
+
+.Gif h2 {
+    margin: 0;
+}
+
+.Gif img {
+    width: 30%;
+    align-self: center;
+}
