@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Gif from './Gif'
 
 export default function ListOfGifs( {gifs} ) {
@@ -16,3 +16,4 @@ export default function ListOfGifs( {gifs} ) {
       }
   </div>
 }
+

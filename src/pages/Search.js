@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ListOfGifs from '../components/ListOfGifs'
-import getGifs from '../getGifs'
+import useGifs from '../hooks/useGifs'
 
 
 function Search( {params} ) {
 
-    const {keyword} = params
-    const [loading , setLoading] = useState(false)
-    const [gifs, setGifs] = useState([]);
-
-    useEffect( function () {
-        setLoading(true)
-        getGifs( {keyword} )
-            .then( gifs => {
-                setGifs(gifs)
-                setLoading(false)
-            })
-    }, [keyword]) //Se renderiza cada vez que se cambia la dependencia
-
+    const { keyword } = params
+    const { loading, gifs } = useGifs( {keyword} )
+    console.log('--')
   return (
     <>
       {loading
