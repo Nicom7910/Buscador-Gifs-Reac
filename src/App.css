@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-
 .App-content {
-  background-color: #282c34;
+  background-color: #304163;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,14 +14,14 @@
 }
 
 button {
-  width: 30%;
-  height: 75px;
-  font-size: 30px;
   margin: 10px;
   border-radius: 30px;
 }
 
 .gifs {
-  color: aliceblue;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  color: rgb(41, 144, 175);
   text-decoration: none;
 }

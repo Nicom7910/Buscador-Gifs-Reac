@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'wouter'
-import './Home.css'
+import './Home.css';
 
 const GIFS = ['futbol', 'programming', 'autos', 'perros'];
 
@@ -20,10 +20,10 @@ function Home() {
 
   return (
     <div>
-      <h3 className='App-title'>Gifs</h3>
       <form onSubmit= {handleSubmit}>
           <label> Ingresa tu busqueda de gifs </label>
           <input onChange={handleInput} type='text' value={keyword} />
+          <button className='buscador'>Buscar</button>
       </form>
       <ul>
           {GIFS.map((GIF) => (
